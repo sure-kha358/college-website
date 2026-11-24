@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Website</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+}
+
+nav {
+  background: navy;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+header {
+  background: lightblue;
+  text-align: center;
+  padding: 40px;
+}
+
+section {
+  padding: 25px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.box {
+  background: lightblue;
+  padding: 25px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+button {
+  background: navy;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+}
+
+footer {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media(max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>ABC College</h2>
+  <div>
+    <a href="#courses">Courses</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#recruiters">Recruiters</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Welcome to ABC College</h1>
+  <p>Learn Today, Lead Tomorrow</p>
+</header>
+
+<section id="courses">
+  <h2>Our Courses</h2><br>
+  <div class="container">
+    <div class="box">Computer Science</div>
+    <div class="box">Electronics</div>
+    <div class="box">Artificial Intelligence</div>
+  </div>
+</section>
+
+<section id="faculty">
+  <h2>Our Faculty</h2><br>
+  <div class="container">
+    <div class="box">Prof. Ravi - CSE</div>
+    <div class="box">Prof. Priya - ECE</div>
+  </div>
+</section>
+
+<section id="recruiters">
+  <h2>Top Recruiters</h2><br>
+  <p>Google | Amazon | Microsoft | Infosys</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <textarea placeholder="Enter Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 ABC College</p>
+</footer>
+
+</body>
+</html>
